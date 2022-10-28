@@ -1,0 +1,57 @@
+;
+; OPLS/AA topology for 'UNK'
+; Converted from Q with q2gmx.ipynb
+; Date: Thu Sep 29 12:26:51 2022
+;
+
+[ atomtypes ]
+; name mass charge ptype sigma(nm) epsilon (kJ/mol) 
+   op_unk.BR1 op_unk.BR1  79.904000   0.000   A      3.470000e-01    1.966482e+00
+   op_unk.C1  op_unk.C1   12.011000   0.000   A      3.499999e-01    2.761453e-01
+   op_unk.CL1 op_unk.CL1  35.453000   0.000   A      4.020000e-01    2.970636e+00
+   op_unk.H1  op_unk.H1    1.007900   0.000   A      2.499994e-01    1.255238e-01
+   op_unk.H2  op_unk.H2    1.007900   0.000   A      2.499994e-01    1.255238e-01
+   op_unk.H3  op_unk.H3    1.007900   0.000   A      2.499994e-01    1.255238e-01
+
+[ moleculetype ]
+; Name nrexcl
+UNK 3
+
+[ atoms ]
+; nr type  resnr residue  atom  cgnr charge  mass 
+    1   op_unk.CL1     1 UNK   CL1       1  -1.000000  35.453000
+    2   op_unk.C1      1 UNK   C1        1  -0.235300  12.011000
+    3   op_unk.H1      1 UNK   H1        1   0.146400   1.007900
+    4   op_unk.BR1     1 UNK   BR1       1  -0.203900  79.904000
+    5   op_unk.H2      1 UNK   H2        1   0.146400   1.007900
+    6   op_unk.H3      1 UNK   H3        1   0.146400   1.007900
+
+[ bonds ]
+; ai    aj    type     r0 (nm)   fc (kJ/(mol nm2)) 
+    2     3     1   0.109000 284512.000
+    2     4     1   0.199000 205016.000
+    2     5     1   0.109000 284512.000
+    2     6     1   0.109000 284512.000
+
+[ angles ]
+;  ai    aj    ak type    theta0 (degr)   fc (kJ/(mol rad2) 
+    3     2     4     1    107.600    426.768
+    3     2     5     1    107.800    276.144
+    3     2     6     1    107.800    276.144
+    4     2     5     1    107.600    426.768
+    4     2     6     1    107.600    426.768
+    5     2     6     1    107.800    276.144
+
+[ dihedrals ]
+; Type 5 Fourier
+;  ai    aj    ak    al  type     coefficients
+
+
+[ dihedrals ]
+; Periodic improper dihedrals (type 4)
+;  ai    aj    ak    al  type     phi0    fc (kJ/mol)   n 
+
+
+[ pairs ]
+;  ai    aj       f_qq    qi     qj   sigma (nm)  epsilon (kJ/mol) 
+

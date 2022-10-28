@@ -1,0 +1,33 @@
+; Include forcefield parameters
+#include "oplsaa.ff/forcefield.itp"
+
+[ atomtypes ]
+; name mass charge ptype sigma(nm) epsilon (kJ/mol) 
+   op_unk.BR1 op_unk.BR1  79.904000   0.000   A      3.470000e-01    1.966482e+00
+   op_unk.C1  op_unk.C1   12.011000   0.000   A      3.499999e-01    2.761453e-01
+   op_unk.CL1 op_unk.CL1  35.453000   0.000   A      4.020000e-01    2.970636e+00
+   op_unk.H1  op_unk.H1    1.007900   0.000   A      2.499994e-01    1.255238e-01
+   op_unk.H2  op_unk.H2    1.007900   0.000   A      2.499994e-01    1.255238e-01
+   op_unk.H3  op_unk.H3    1.007900   0.000   A      2.499994e-01    1.255238e-01
+
+; Include chain topologies
+#include "R2P.itp"
+
+; Include SPC water topology
+#include "oplsaa.ff/spce.itp"
+
+; Include topology for ions
+#include "oplsaa.ff/ions.itp"
+
+[ system ]
+;name 
+EVB Example in water
+
+[ molecules ]
+UNK	1
+;SOL               487
+SOL         382
+NA               1
+SOL               487
+SOL         486
+NA               1

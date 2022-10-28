@@ -1,0 +1,28 @@
+# This file was created Fri Oct 28 19:00:20 2022
+# Created by:
+#                  :-) GROMACS - gmx bar, 2022-conda_forge (-:
+# 
+# Executable:   /opt/anaconda3/envs/modelling/bin.SSE2/gmx
+# Data prefix:  /opt/anaconda3/envs/modelling
+# Working dir:  /Users/juandegracia/Library/CloudStorage/OneDrive-KTH/10_EVB_tutorial/EVB_gromacs_tutorial
+# Command line:
+#   gmx bar -f FEP_data/md0.xvg FEP_data/md1.xvg FEP_data/md10.xvg FEP_data/md2.xvg FEP_data/md3.xvg FEP_data/md4.xvg FEP_data/md5.xvg FEP_data/md6.xvg FEP_data/md7.xvg FEP_data/md8.xvg FEP_data/md9.xvg -o -oi
+# gmx bar is part of G R O M A C S:
+#
+# Getting the Right Output Means no Artefacts in Calculating Stuff
+#
+@    title "Free energy integral"
+@    xaxis  label "\xl\f{}"
+@    yaxis  label "\xD\f{}G (kT)"
+@TYPE xy
+     0  0.00
+     1 23.47
+     2 46.05
+     3 59.79
+     4 69.08
+     5 72.34
+     6 70.33
+     7 54.55
+     8 35.39
+     9 10.49
+    10 -17.05

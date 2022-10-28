@@ -1,0 +1,27 @@
+# This file was created Fri Oct 28 19:00:20 2022
+# Created by:
+#                  :-) GROMACS - gmx bar, 2022-conda_forge (-:
+# 
+# Executable:   /opt/anaconda3/envs/modelling/bin.SSE2/gmx
+# Data prefix:  /opt/anaconda3/envs/modelling
+# Working dir:  /Users/juandegracia/Library/CloudStorage/OneDrive-KTH/10_EVB_tutorial/EVB_gromacs_tutorial
+# Command line:
+#   gmx bar -f FEP_data/md0.xvg FEP_data/md1.xvg FEP_data/md10.xvg FEP_data/md2.xvg FEP_data/md3.xvg FEP_data/md4.xvg FEP_data/md5.xvg FEP_data/md6.xvg FEP_data/md7.xvg FEP_data/md8.xvg FEP_data/md9.xvg -o -oi
+# gmx bar is part of G R O M A C S:
+#
+# Getting the Right Output Means no Artefacts in Calculating Stuff
+#
+@    title "Free energy differences"
+@    xaxis  label "\xl\f{}"
+@    yaxis  label "\xD\f{}G (kT)"
+@TYPE xydy
+ 0.500 23.47  0.48
+ 1.500 22.58  1.10
+ 2.500 13.74  0.87
+ 3.500  9.29  1.22
+ 4.500  3.26  1.18
+ 5.500 -2.01  1.05
+ 6.500 -15.78  0.95
+ 7.500 -19.16  1.07
+ 8.500 -24.89  1.16
+ 9.500 -27.54  1.20
