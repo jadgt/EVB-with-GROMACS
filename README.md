@@ -2,8 +2,7 @@
 
 The EVB arises to aid the exploration of chemical reactivity in complex environments, where quantum mechanical methods are too expensive and molecular mechanics are too inaccurate to describe a high-quality potential energy surface\cite{warshel1980empirical}. In this regard, EVB is an intermediate approach between quantum and molecular mechanics where the environment and unactive parts of a molecule can be effectively treated by molecular mechanics but, the reactive region will be corrected by means of \textbf{empirical} (or quantum mechanical) references. In consequence, EVB is, in practice, a molecular mechanics method which introduces correction from empirical (or higher-level calculations) values for a reaction of interest. The major advantage of EVB is its capacity to describe changes in reactivity when the environment is changed. 
 
-Let us consider a bond formation reaction defined by a reactant state 1 and a product state 2. The lowest energy eigenvalue will be given by the solution of the secular equation:
-$$\left|\begin{matrix}H_{11}-E_g&H_{12}-E_gS_{12}\\H_{21}-E_gS_{21}&H_{22}-E_g\\\end{matrix}\right|=0$$
+Let us consider a bond formation reaction defined by a reactant state 1 and a product state 2. The lowest energy eigenvalue will be given by the solution of the secular equation:$$\left|\begin{matrix}H_{11}-E_g&H_{12}-E_gS_{12}\\H_{21}-E_gS_{21}&H_{22}-E_g\\\end{matrix}\right|=0$$
 
 Where $H_{11}$ and $H_{22}$ are the potential energy surfaces of reactant and products and are usually called diabatic potential surfaces.  $E_g$ is the adiabatic potential surface corresponding to the transformation from 1 to 2 and $S_{12}=S_{21}$ are the overlap between states which, in practice, are neglected and incorporated into the off-diagonal terms $H_{12}$ and $H_{21}$. In the framework of molecular mechanics, the diabatics will be defined as:
 $$H_{11}=\mathcal{M}\left(r_1\right)+U_{active}^{(1)}+U_{inactive}^{(1)}$$
@@ -26,6 +25,6 @@ $$\varepsilon_m\left(\lambda_m\right)=\ H_{11}\left(1-\lambda_m\right)+H_{22}\la
 The free energy associated with an incremental change in the coupling parameter will be obtained applying 2.85:
 $$\Delta G({\lambda_m \rightarrow \lambda_{m+1}})= -k_b T \ln \langle e^{(-\varepsilon_{m+1}-\varepsilon_m) / k_bT} \rangle_{\lambda_m}$$
 And the total reaction free energy will be obtained by integrating the incremental variations given by 2.87. Finally, to introduce the EVB potential energy correction in the mapping potential, one can combine 2.84, 2.86 and 2.87 in the following way:
-$$\Delta G_{EVB}(\lambda_m \rightarrow \lambda_{m+1})=\log\left(\frac{e^{(-E_g(\lambda_m)-\varepsilon_m(\lambda_m)/RT} e^{(- \Delta G({\lambda_m \rightarrow \lambda_{m+1}})/RT}} {RT}\right)$$
-And the summation of 2.88 over all $\lambda$ will give the \textbf{EVB corrected free energy} profile of reaction.
+$$ \Delta G_{EVB}(\lambda_m \rightarrow \lambda_{m+1})=\log\left(\frac{e^{(-E_g(\lambda_m)-\varepsilon_m(\lambda_m)/RT} e^{(- \Delta G({\lambda_m \rightarrow \lambda_{m+1}})/RT}} {RT}\right) $$
+And the summation of 2.88 over all $\lambda$ will give the *EVB corrected free energy* profile of reaction.
 
