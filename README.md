@@ -20,7 +20,7 @@ Which is the canonical equation of the EVB approach.
 Once the adiabatic potential $E_g$ is obtained, the interest for a computational chemist in many cases will be obtaining the Gibbs free energy. One can use a \textbf{\gls{FEP}} molecular dynamics simulation in the isothermal-isobaric ensemble (NPT) and correct it with the EVB approach. The free energy perturbation is mathematically defined by the \textbf{Zwanzig equation} \cite{zwanzig1954high}:
 $$\Delta G_{1\rightarrow 2}=-k_b T \ln \left\langle e^{\frac{H_{22}-H{11}}{k_B T}} \right\rangle_1$$
 Where $\langle \rangle _1$ denotes the average over the ensemble of the state 1. This equation, besides its exactitude, computationally converges very slowly. To accelerate the convergence it is customary to use a \textbf{mapping potential} that slowly moves from state 1 to state 2 by dividing the reaction coordinate into symmetrical fragments. Introducing a coupling parameter $\lambda\ \in[0,1]$  the mapping potential will read as:
-$$ \epsilon_m(\lambda_m)=\ H_{11}(1-\lambda_m)+H_{22}\lambda_m $$
+$$ \varepsilon_m (\lambda_m) = H_{11}(1-\lambda_m)+H_{22}\lambda_m $$
 
 The free energy associated with an incremental change in the coupling parameter will be obtained applying 2.85:
 $$\Delta G({\lambda_m \rightarrow \lambda_{m+1}})= -k_b T \ln \langle e^{(-\varepsilon_{m+1}-\varepsilon_m) / k_bT} \rangle_{\lambda_m}$$
