@@ -26,7 +26,7 @@ comm = MPI.COMM_WORLD
 rank = comm.Get_rank()
 size = comm.Get_size()
 
-files = [f"{i}.txt" for i in range(10)]
+files = [f"{i}.txt" for i in range(num_lam)]
 files_per_process = len(files) // size
 if rank < len(files) % size:
     files_per_process += 1
