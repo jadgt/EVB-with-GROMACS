@@ -7,7 +7,7 @@ To get started let's go to prepare the system [here](Preparing.ipynb)
 
 ## Executable file with MPI
 
-Once you have prepared all the `.txt` files I have created also an MPI implementation of the EVB driver that will print the activation free energy and reaction free energy in kcal/mol and in addition will generate a pdf plot of the profile called `evb.pdf`. This implementation can be advantageous when carrying many lambdas or long datafiles.
+Once you have prepared all the `.txt` files I have created also an [MPI implementation](EVB_MPI.py) of the EVB driver that will print the activation free energy and reaction free energy in kcal/mol and in addition will generate a pdf plot of the profile called `evb.pdf`. This implementation can be advantageous when carrying many lambdas or long datafiles.
 In order to execute the MPI implementation we need to have installed `mpi4py`.
 To install it, execute in terminal the following line:
 ```
